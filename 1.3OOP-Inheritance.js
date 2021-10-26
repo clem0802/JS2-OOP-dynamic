@@ -1,4 +1,4 @@
-// 2021.10.25 FROM (MM) 
+// 2021.10.25 FROM (MIMO) 
 /*----------------------------------*/
 // OOP => OBJECT-ORIENTED PROGRAMMING
 // another key OOP concept: INHERITANCE

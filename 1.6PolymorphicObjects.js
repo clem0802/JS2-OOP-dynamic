@@ -1,6 +1,6 @@
 // 2021.10.26 FROM (MIMO) 
 /*----------------------------------*/
-// POLUMORPHIC OBJECTS
+// POLYMORPHIC OBJECTS
 // to make our code easier to use, we want to keep the same METHOD CALLs for different OBJECTs
 // even if they have slightly different behaviors
 

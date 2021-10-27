@@ -54,7 +54,7 @@ class Car {
 
 var coupe = new Car();
 
-coupe.alertOpenDoor = function () {
+coupe.alertOpenDoor = function () { //!
     console.log("Close 2 doors!");
 }
 
@@ -110,7 +110,7 @@ coupe.lockDoors();
 
 /*----------------------------------*/
 // how to customize only the "cowboy" OBJECT's greet() METHOD so that it logs "Howdy!" ?
-// by setting a custom "greet()"" METHOD on "cowboy" //! check
+// by setting a custom "greet()"" METHOD on "cowboy" 
 class Person {
     greet() {
         console.log("Hello");
@@ -118,7 +118,7 @@ class Person {
 }
 
 var cowboy = new Person();
-var person = new Person();
+var farmer = new Person();
 
 
 
@@ -143,7 +143,7 @@ professor.greet();
 
 
 /*----------------------------------*/
-// what gets displayed in the console?  //! check
+// what gets displayed in the console?  
 class Person {
     greet() {
         console.log("Hello!");
@@ -157,7 +157,7 @@ class Professor extends Person {
 }
 
 var professor = new Professor();
-professor.greet = function() {
+professor.greet = function() {  //!
     console.log("Good news, everyone!");
 }
 
@@ -175,7 +175,8 @@ class User {
 }
 
 var premium = new User();
-premium.playVideo = function() {
+
+premium.playVideo = function() {  //! cette étape supp a empêché l'affichage de la pub
     console.log("Buffering 8K HD Video");
 };
 
@@ -207,27 +208,27 @@ user1.playVideo();
 
 
 /*----------------------------------*/
-// place the code snippets in their correct METHODs so that "spartphone.unlock()" prompts the user to enter their thumbprint //! check
+// place the code snippets in their correct METHODs so that "smartphone.unlock()" prompts the user to enter their thumbprint 
 class Cell {
     unlock() {
         console.log("Enter passcode");
     }
 }
 
-class Spartphone extends Cell {
+class Smartphone extends Cell {
     unlock() {
         console.log("Enter thumbprint");
     }
 }
 
-var smartphone = new Spartphone();
+var smartphone = new Smartphone();
 smartphone.unlock();
 // Enter thumbprint
 
 
 
 /*----------------------------------*/
-// make "phone1" unlock by scanning the user's face and "phone2" unlock by scanning the user's thumbprint //! check
+// make "phone1" unlock by scanning the user's face and "phone2" unlock by scanning the user's thumbprint 
 class Smartphone {
     unlock() {
         console.log("Enter thumbprint");

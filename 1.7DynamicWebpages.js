@@ -211,7 +211,7 @@
     <body>
         <h2 id="rental">Ben's Bike Rental</h2>
         <script>
-            document.getElementById("favorite").innerHTML = "Ron's Bile Rental";
+            document.getElementById("favorite").innerHTML = "Ron's Bike Rental";
         </script>
     </body>
 </html>

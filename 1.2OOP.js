@@ -1,4 +1,4 @@
-// 2021.10.25 FROM (MIMO) 
+// 2021.10.25 FROM (MM) 
 /*----------------------------------*/
 // OOP => OBJECT-ORIENTED PROGRAMMING
 // in FP, code is not encapsulated => the variables and the function are not grouped together in one OBJECT

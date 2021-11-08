@@ -1,4 +1,4 @@
-// 2021.10.26 FROM (MIMO) 
+// 2021.10.26 FROM (MM) 
 /*----------------------------------*/
 // ABSTRACTING OBJECTS
 // how to create OBJECTS that are easy to understand and use in OOP

@@ -1,4 +1,4 @@
-// 2021.10.25 FROM (MIMO) 
+// 2021.10.25 FROM (MM) 
 /*----------------------------------*/
 // OBJECT-ORIENTED PROGRAMMING
 // a style of coding used by developers to model real-life objects

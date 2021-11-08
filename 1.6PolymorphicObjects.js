@@ -1,4 +1,4 @@
-// 2021.10.26 FROM (MIMO) 
+// 2021.10.26 FROM (MM) 
 /*----------------------------------*/
 // POLYMORPHIC OBJECTS
 // to make our code easier to use, we want to keep the same METHOD CALLs for different OBJECTs

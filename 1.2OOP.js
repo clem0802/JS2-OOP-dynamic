@@ -3,12 +3,16 @@
 // OOP => OBJECT-ORIENTED PROGRAMMING
 // in FP, code is not encapsulated => the variables and the function are not grouped together in one OBJECT
 // in OOP, we group together related data and functions in the same object = ENCAPSULATION
-//! in OOP, the key principle is "ENCAPSULATION" METHODS
+// in OOP, the key principle is ["ENCAPSULATION"] METHODS
+// ENCAPSULATION => is a pillar of OOP
+// METHODS in OOP can "use" and "modify" their object's PROPERTIES  !!!
 // in OOP, we have to ["IDENTIFY"] which METHODS and PROPERTIES belong together and which should be added to other OBJECTS 
+
+/*----------------------------------*/
 // car (OBJECT)
 // mileage (PROPERTY)
 // drive (METHOD)
-// drive() has access to "mileage" PROPERTY
+// drive() METHOD has access to "mileage" PROPERTY
 
 var car = {
     mileage: 12000,
@@ -18,22 +22,78 @@ var car = {
 };
 
 
-var car = { // encapsulated code
+/*----------------------------------*/
+// encapsulated code
+var car = { 
     color: "red",
     on: false,
     start: function(){
         car.on = true;
     }
 }
-
-
-var person = { // encapsulated code
+//---------
+var person = { 
     name: "Jeremiah",
     greet: function(){
         console.log("Hi there!")
     }
 };
+//---------
+var smartphone = {
+    brand: "appel",
+    call: function() {
+    }
+};
 
+
+
+/*----------------------------------*/
+// codes below respect "ENCAPSULATION PRINCIPLE"
+var desktop = {
+    on: false,
+    start: function() {
+        desktop.on = true;
+    }
+};
+
+var laptop = {
+    on: false,
+    start: function() {
+        laptop.on = true;
+    }
+};
+
+
+
+/*----------------------------------*/
+// the OOP below has 3 METHODs
+var dog = {
+    hungry: true,
+    asleep: false,
+    bark: function() {
+        console.log("Woof!");
+    },
+    eat: function() {
+    dog.hungry: false;
+    },
+    sleep: function() {
+    dog.asleep: true;
+    },
+};
+
+
+
+/*----------------------------------*/
+// 3 METHODS
+var washingMachine = {
+    washClothes: function() {},
+};
+var coffeeMaker = {
+    makeCoffee: function() {},
+};
+var toaster = {
+    makeToast: function() {},
+};
 
 
 
@@ -66,7 +126,7 @@ var height = 4;
 
 // (3) EXO to turn (2) into OOP
 //!! turn VARIABLES into PROPERTIES
-//!! tuen FUNCTION into METHOD
+//!! turn FUNCTION into METHOD
 // getArea()is an OBJECT METHOD
 // call the rectangle's getArea() METHOD
 // display the result

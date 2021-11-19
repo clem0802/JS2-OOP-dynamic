@@ -125,7 +125,7 @@ class ManualCar extends Car {
   }
 }
 
-var car = new ManualCar;
+var car = new ManualCar();
 car.turnOnAC(); // AC is on
 car.startUp(); // Press clutch
 

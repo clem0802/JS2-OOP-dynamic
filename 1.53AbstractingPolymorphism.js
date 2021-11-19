@@ -3,7 +3,7 @@
 // POLYMORPHISM
 
 /*----------------------------------*/ (I)
-// polymorphism lets us code different implementations for a behavior
+// POLYMORPHYSM lets us code different implementations for a behavior
 // both "INSTANCES" and "SUBCLASSES" can override their inherited METHODS
 
 class Person {

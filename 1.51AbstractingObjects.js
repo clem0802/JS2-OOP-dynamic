@@ -2,11 +2,11 @@
 /*----------------------------------*/
 // ABSTRACTING OBJECTS
 // how to create OBJECTS that are easy to understand and use in OOP
-// how to model a complicated OBJECT, like a car, in JAvaScript
+// how to model a complicated OBJECT, like a car, in JavaScript
 // we don't interact with every METHOD or PROPERTY
 // but we interact with only a few CORE PARTS that control the rest of the car
 // a car does a lot of things at the same time
-// a car injects and ignites ful thousands of times a minute just to stay running
+// a car injects and ignites for thousands of times a minute just to stay running
 // if we had to always make low-level METHOD CALLs to control an OBJECT, our code would be very hard to read and use
 // manage each low-level METHOD CALL by ourselves increases the chance we'll make a mistake and cause unwanted effects
 // ABSTRACTION reduces bugs caused by users calling low-level methods incorrectly
@@ -34,7 +34,7 @@ car.igniteFuel();
 // cars do all of this low-level functionality for us, and we only have to start them up
 // hiding these details is called ABSTRACTION
 //! ABSTRACTION = simplifying how we interact with OBJECTS down to a few METHODS
-// ABSTRACTION reduces the number of mMETHODS users call
+// ABSTRACTION reduces the number of METHODS users call
 // we implement abstraction in OOP by writing a few CORE FUNCTIONS that handle all of the low-level work
 // ABSTRACTION allows other developers to use our CLASS without having to know what low-level METHODS it has or how they even work
 // other developers can create a new object from our "Car" CLASS and use it by just calling a few CORE METHODS

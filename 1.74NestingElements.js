@@ -163,7 +163,7 @@
 
 /*----------------------------------*/
 // add an element inside the "body" element by coding
-// bodyuElement.appendChild()
+// bodyElement.appendChild()
 <!doctype html>
 <html>
     <body id="main"> 

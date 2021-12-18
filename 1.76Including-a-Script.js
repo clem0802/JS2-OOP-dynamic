@@ -77,20 +77,21 @@
 
 
 /*----------------------------------*/
-//!  .innerHTML
+// .innerHTML
 // HTML & JavaScript  (2 fils co-exist)
 // using  .innerHTML, we can make the sayHello() function change the content of the paragraph when clicked
 // set the content of the paragraph to "Website published"
-//? (HTML)
+// (HTML)
 <!doctype html>
 <html>
     <body> 
         <button onclick="sayHello()">Publish websites</button> 
         <p id="prompt"></p>
+        <script src="script.js"></script>
     </body>
 </html>
 
-//? (JavaScript)
+// (JavaScript)
 function sayHello() {
     document.getElementById("prompt").innerHTML = "Website published"; //!
 }
@@ -131,3 +132,73 @@ function sayHello() {
         <script src="script.js"></script>
     </body>
 </html>
+
+
+
+/*----------------------------------*/
+// write the code to call the "subscribe()" function in the "script.js" file when a user clicks the "subscribe" button
+// (HTML)
+<!doctype html>
+<html>
+    <body> 
+        <h1>New York Times</h1>
+        <p>Get the latest and greatest news!</p>
+        <button onclick="subscribe()">subscribe</button> // => onclick=
+        <script src="script.js"></script>
+    </body>
+</html>
+
+// (JavaScript)
+function subscribe() {
+    console.log("Welcome on board!");
+}
+
+
+
+/*----------------------------------*/
+// .innerHTML
+// inside the "change()" function, use "document.getElementById()" and ".innerHTML"
+// to UPDATE the "h3" element's text to "pPONG"
+// (HTML)
+<!doctype html>
+<html>
+    <body> 
+        <h3 id="word">ping</h3>
+        <button onclick="change()">change</button> 
+        <script src="script.js"></script>
+    </body>
+</html>
+
+// (JavaScript)
+function change() {
+    document.getElementById("word").innerHTML = "PONG"; //!
+}
+
+
+
+/*----------------------------------*/
+// what happens when a user clicks the "Next" button?
+// the "next()" function gets called to change to a new fact
+// (HTML)
+<!doctype html>
+<html>
+      <!-- <head>
+      <link rel="stylesheet" href="style.css">
+      </head> -->
+ <body>
+   <h2>Cat Facts</h2>
+   <p id="fact">A cat cannot see directly below its nose.</p>
+   <button onclick="previous()">Previous</button>
+   <button onclick="next()">Next</button>
+   <script src="script.js"></script>
+ </body>
+</html>
+
+// (JavaScript)
+function next(){
+    document.getElementById("fact").innerHTML = "Cats first went to space in 1963.";
+}
+
+function previous(){
+    document.getElementById("fact").innerHTML = "A cat cannot see directly below its nose.";
+}

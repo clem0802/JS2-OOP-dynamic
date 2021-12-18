@@ -29,7 +29,7 @@
 
 /*----------------------------------*/
 //! TEXTAREA = TEXT AREA (zone de texte)
-// 'input' elements can only be text fields with a single line
+// "INPUT" elements can only be text fields with a SINGLE LINE
 // to create a multiple-line TEXT AREA, we use the "textarea" element
 // create a text area using the <textarea></textarea> tags
 <!doctype html>

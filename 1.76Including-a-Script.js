@@ -2,12 +2,14 @@
 /*----------------------------------*/
 // DYNAMIC WEBPAGES
 // INCLUDING A SCRIPT
+
 // to make creating interactive webpages even easier, we can use separate files to add JavaScript and HTML
 // the HTML file is named "index.html"
 // the JavaScript file is named "script.js"
 // we can make HTML fils include JavaScript files, or scripts, between the script tags
 // we can also connect the HTML file to JavaScript file 
 // to include a script, the opening script tage needs a "src" ATTRIBUTE
+
 <!doctype html>
 <html>
     <body> 

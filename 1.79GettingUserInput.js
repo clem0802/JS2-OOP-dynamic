@@ -4,6 +4,31 @@
 // GETTING USER INPUT
 
 
+
+/*----------------------------------*/
+// .VALUE
+// after accessing user input, we can use it like any other value
+// try running your code and registering a username to see what displays in the console
+//! (HTML)
+<!doctype html>
+<html>
+    <body> 
+        <input id="usernameInput" type="text" placeholder="Username">
+        <button onclick="register()">Register</button> 
+        <p id="message"></p>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+//! (JavaScript)
+function register() {
+    var username = document.getElementById("usernameInput").value;
+    console.log(username);
+}
+
+
+
+
 /*----------------------------------*/ (USEFUL !!)
 // knowing how to get user input, we can use it to update a webpage
 // assemble the code so that the value of "username" appears on the webpage when clicking on the Register button
@@ -11,7 +36,7 @@
 <!doctype html>
 <html>
     <body> 
-        <input id="usernameInput" type="text" placeholder="Username">
+        <input id="usernameInput" type="text" placeholder="Username"> // NO CLOSING TAG !!
         <button onclick="register()">Register</button> 
         <p id="message"></p>
         <script src="script.js"></script>
@@ -76,14 +101,14 @@ function addAReview() {
     
 //! (JavaScript)
 function tweetPost() {
-    var tweet = document.getElementById("tweetText").value; //
+    var tweet = document.getElementById("tweetText").value; // "tweetText" is the ID of textarea in HTML
     console.log(tweet);
 }
   
   
   
   
-/*----------------------------------*/ (USEFUL !!) (i
+/*----------------------------------*/ (USEFUL !!) 
 //  
   
   

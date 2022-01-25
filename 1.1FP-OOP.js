@@ -1,4 +1,4 @@
-// 2021.10.25 FROM (MM) 
+// 2021.10.25 FROM (MM) OK
 /*----------------------------------*/
 // OBJECT-ORIENTED PROGRAMMING
 // a style of coding used by developers to model real-life objects
@@ -8,7 +8,6 @@
 function getTotal(a,b){
     return a+b;
 }
-console.log(getTotal);
 
 var num1 =2;
 var num2 =3;
@@ -52,11 +51,11 @@ console.log(dog.hungry); // false
 
 /*----------------------------------*/
 // OOP code => (Object-Oriented Programming)
-// OOP is useful for modelin greal-life objects, have properties and functions that we treat as one package
-//! we use OOP when we want to KEEP TRACK OF A VALUE as an OBJECT'S PROPERTY
+// OOP is useful for modeling real-life objects, have properties and functions that we treat as one package
+// we use OOP when we want to KEEP TRACK OF A VALUE as an OBJECT'S PROPERTY
 // here we model a car by creating an object with a "mileage" PROPERTY and "drive()" METHOD
 // one style is not a replacement for the other, we need both FP and OOP
-//! we call an OBJECT'S FUNCTIONS => METHODS
+// we call an OBJECT'S FUNCTIONS => "METHODS"
 var car = {
     mileage: 12000,
     drive: function(miles) {
@@ -68,9 +67,8 @@ console.log(car.mileage); // 12100
 
 
 
-
 /*----------------------------------*/ 
-// 
+// this OBJECT has 2 properties
 var dog = {
     breed: "Dalmation",
     hungry: true,
@@ -98,7 +96,7 @@ console.log(dog); // {breed: 'Dalmation', hungry: false, bark: ƒ, eat: ƒ}
 //! PIGGY BANK !!!!
 //! PIGGY BANK !!!!
 
-// less experienced code, in FP
+// by less experienced coder, in FP
 function addMoney(value, amount){
     return value + amount;
 }
@@ -117,7 +115,7 @@ var myPiggy = {
 }
 
 /*----------------------------------*/ 
-// SECOND, add a METHOD => "addMoney()" that accepts a PARAMETER "amount"
+// SECOND, add a METHOD => "addMoney()" that accepts a PARAMETER called "amount"
 var myPiggy = {
     value : 0,
     addMoney: function(amount)

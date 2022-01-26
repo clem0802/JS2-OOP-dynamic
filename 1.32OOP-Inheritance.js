@@ -31,9 +31,9 @@ class Person {
     }
 }
 
-var person1 = new Person("Sam",23);
-var person2 = new Person("Jim",24);
-var person3 = new Person("Bob",25);
+var person1 = new Person("Sam", 23);
+var person2 = new Person("Jim", 24);
+var person3 = new Person("Bob", 25);
 console.log(person1);
 person1.greet();
 person2.greet();
@@ -95,8 +95,8 @@ class User {
 
 class Student extends User {
     constructor(name, age, major) {
-        super(name, age); //!
-        this.major = major; //!
+        super(name, age); // inherited properties
+        this.major = major; // additional property
     }
 }
 

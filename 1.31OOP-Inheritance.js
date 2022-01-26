@@ -38,7 +38,7 @@ var person = Object.create(template);
 
 /*----------------------------------*/
 /*----------------------------------*/
-// OBJECTS don't own inherited METHODS but BORROW them
+// OBJECTS don't OWN inherited METHODS but "BORROW" them
 // Object.create //!!!
 
 var template = {
@@ -47,7 +47,7 @@ var template = {
     }
 };
 var person = Object.create(template); //!
-person.greet(); // Hi //! to CALL greet() as a METHOD of "person"
+person.greet(); // Hi // to CALL greet() as a METHOD of "person"
 console.log(template); // {greet: ƒ} => { greet: [Function: greet] }
 console.log(person); // {} => the "person" OBJECT is EMPTY
 
@@ -56,7 +56,7 @@ console.log(person); // {} => the "person" OBJECT is EMPTY
 /*----------------------------------*/
 /*----------------------------------*/
 // if we need more METHODS for an OBJECT, we can set them directly
-// Object.create //!!!
+// Object.create()
 
 var car = {
     startEngine: function() {
@@ -64,13 +64,13 @@ var car = {
     }
 };
 
-var hybrid = Object.create(car); //!
-    hybrid.charge = function() { //! to add new "charge" METHOD
-        console.log("Using fuel to charge battery");
+var hybrid = Object.create(car);  //
+hybrid.charge = function() {  // to add new "charge" METHOD
+    console.log("Using fuel to charge battery");
 };
 
-hybrid.startEngine();
-hybrid.charge();
+hybrid.startEngine(); // Starting engine
+hybrid.charge(); // Using fuel to charge battery
 
 
 
@@ -79,7 +79,7 @@ hybrid.charge();
 // Object.create //!!!
 // when using the above formula, PROPERTY values are not inherited
 // display "player1" OBJECT, it doesn't have a "name" VALUE
-//! output: EMPTY OBJECT 
+// output: EMPTY OBJECT 
 
 var player = {
     name: "Player",
@@ -89,7 +89,7 @@ var player = {
 };
 
 var player1 = Object.create(player);
-console.log(player1); //! {}
+console.log(player1); // {}
 
 player1.name = "Jill";
 console.log(player1); // {name: 'Jill'}

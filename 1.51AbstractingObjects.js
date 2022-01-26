@@ -33,8 +33,9 @@ car.igniteFuel();
 /*----------------------------------*/
 // cars do all of this low-level functionality for us, and we only have to start them up
 // hiding these details is called ABSTRACTION
-//! ABSTRACTION = simplifying how we interact with OBJECTS down to a few METHODS
+// ABSTRACTION = simplifying how we interact with OBJECTS down to a few METHODS
 // ABSTRACTION reduces the number of METHODS users call
+// ABSTRACTION benefit: fewer bugs caused by user error
 // we implement abstraction in OOP by writing a few CORE FUNCTIONS that handle all of the low-level work
 // ABSTRACTION allows other developers to use our CLASS without having to know what low-level METHODS it has or how they even work
 // other developers can create a new object from our "Car" CLASS and use it by just calling a few CORE METHODS
@@ -57,7 +58,7 @@ class Car {
 }
 
 var car = new Car();
-car.startUp();
+car.startUp(); // => running infinitely........
 // Spraying fuel
 // Boom!
 // Spraying fuel
@@ -83,7 +84,7 @@ class Coffeemaker {
         console.log("Filtering coffee");
     }
 
-    makeCoffee() {
+    makeCoffee() { // method
         this.heatWater();
         this.brew();
         this.filter();

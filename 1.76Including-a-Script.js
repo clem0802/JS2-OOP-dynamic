@@ -122,6 +122,11 @@ function sayHello() {
     </body>
 </html>
 
+// (JavaScript)
+function deleteAccount() {
+    document.getelementById("prompt").innerHTML = "Account deleted!";
+}
+
 
 
 /*----------------------------------*/
@@ -135,6 +140,11 @@ function sayHello() {
     </body>
 </html>
 
+// (JavaScript)
+function save() {
+    document.getElementById("prompt").innerHTML = "Progress saved!";
+}
+
 
 
 /*----------------------------------*/
@@ -145,7 +155,7 @@ function sayHello() {
     <body> 
         <h1>New York Times</h1>
         <p>Get the latest and greatest news!</p>
-        <button onclick="subscribe()">subscribe</button> // => onclick=
+        <button onclick="subscribe()">Subscribe</button> // => onclick=
         <script src="script.js"></script>
     </body>
 </html>
@@ -184,9 +194,9 @@ function change() {
 // (HTML)
 <!doctype html>
 <html>
-      <!-- <head>
-      <link rel="stylesheet" href="style.css">
-      </head> -->
+      <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
  <body>
    <h2>Cat Facts</h2>
    <p id="fact">A cat cannot see directly below its nose.</p>

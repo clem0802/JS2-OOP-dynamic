@@ -4,7 +4,6 @@
 // GETTING USER INPUT
 
 
-
 /*----------------------------------*/
 // .VALUE
 // after accessing user input, we can use it like any other value
@@ -50,7 +49,6 @@ function register() {
 }
 
 
-
     
 /*----------------------------------*/ (USEFUL !!)
 // display the review in the paragraph when users click on the "ADD REVIEW" button
@@ -84,7 +82,6 @@ function addAReview() {
     
 /*----------------------------------*/ (USEFUL !!) (img de MIGNION)
 // set "tweet" to the value of the "TEXTAREA" element
-//! (HTML)
 <!doctype html>
 <html>
     <body> 
@@ -105,10 +102,92 @@ function tweetPost() {
     console.log(tweet);
 }
   
+
+
+/*----------------------------------*/ (USEFUL !!) (img de MIGNION) 2022.01.29
+<!doctype html>
+<html>
+     <body>
+     <img id="profilePic" src="https://mimo.app/r/profile.png" height="45">
+     <textarea id="postText" rows="3" cols="18" placeholder="What's on your mind?"></textarea>
+     <br>
+     <button onclick="share()">Share</button>
+
+  <script src="script.js"></script>
+ </body>
+</html>
+    
+//! (JavaScript)
+function share(){
+    var post = document.getElementById("postText").value;
+    console.log(post);
+}
+
   
   
-  
+/*----------------------------------*/
+/*----------------------------------*/
 /*----------------------------------*/ (USEFUL !!) 
-//  
+/*----------------------------------*// (for GROUP PROJECT) (html à vérifier sur Google) // 2022.01.29
+// GET USER INPUT !!
+<!doctype html>
+<html>
+    <body> 
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Your email" id="email"> 
+          <br>
+        <input type="text" placeholder="Street">
+          <br>
+        <input type="text" placeholder="City">
+        <textarea rows="3" cols="15"></textarea>
+        <button>Send</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+/*----------------------------------*// (for GROUP PROJECT) (html à vérifier sur Google) // 2022.01.29
+<!doctype html>
+<html>
+    <body>
+       <input id="usernameInput" type="text" placeholder="Username">
+       <button onclick="register()">Register</button>
+
+       <script src="script.js"></script>
+    </body>
+</html>
+
+// (JavaScript)
+function register(){
+  document.getElementById("usernameInput").value = ""; 
+    // input value set tà an empty string ""
+    // it removes the text inside the input field
+    // and shows the placeholder attribute's value
+}
+
+
+
+/*----------------------------------*// (for GROUP PROJECT) (html à vérifier sur Google) // 2022.01.29
+<!doctype html>
+<html>
+ <body>
+      <h1>Customer Reviews</h1>
+      <textarea id="reviewText" rows="5" cols="18" placeholder="Write your review here"></textarea>
+      <br>
+      <button onclick="addReview()">Add Review</button>
+      <p id="addedReview"></p>
+  
+  <script src="script.js"></script>
+ </body>
+</html>
+
+// (JavaScript)
+function addReview(){
+  var review = document.getElementById("reviewText").value;
+  var addedReview = document.getElementById("addedReview");
+  addedReview.innerHTML = review; // this sets the content of paragraph to "review" element
+}
   
   

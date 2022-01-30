@@ -190,6 +190,8 @@ function signUp() {
 <html>
     <body> 
         <h1>Customer Reviews</h1>
+        <input id="nameInput" type="text" placeholder="Your name">
+        <br>
         <textarea id="reviewText" rows="5" cols="18" placeholder="Write your review here"></textarea>
         <br>
         <button onclick="addReview()">Add Review</button> 

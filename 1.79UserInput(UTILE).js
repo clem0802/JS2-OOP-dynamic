@@ -97,6 +97,7 @@ function addAReview() {
 </html>
     
 //! (JavaScript)
+// set "tweet" to the value of the textarea element => .value
 function tweetPost() {
     var tweet = document.getElementById("tweetText").value; // "tweetText" is the ID of textarea in HTML
     console.log(tweet);
